@@ -1,7 +1,7 @@
 import { Link, useParams, useNavigate, Navigate } from "react-router-dom";
 import { useBookContext } from "../../context/book";
 import styles from "./style.module.css";
-import { actions } from "../../context/book/actions.js";
+import * as actions from "../../context/book/actions.js";
 
 export default function Book() {
   const { bookId } = useParams();

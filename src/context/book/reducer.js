@@ -1,4 +1,4 @@
-import { actions } from "./actions.js";
+import * as actions from "./actions.js";
 
 export default function reducer(state, action) {
   switch (action.type) {

@@ -2,7 +2,7 @@ import BookList from "../../components/bookList";
 import { useBookContext } from "../../context/book";
 import { useState, useRef } from "react";
 import styles from "./style.module.css";
-import { actions } from "../../context/book/actions.js";
+import * as actions from "../../context/book/actions.js";
 
 export default function Search() {
   const [{ bookSearchResults }, dispatch] = useBookContext();
