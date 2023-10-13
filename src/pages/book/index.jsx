@@ -15,11 +15,11 @@ export default function Book() {
   if (!book) return <Navigate to="/favorites" />;
 
   const handleAddToFavorites = () => {
-    dispatch({ type: actions.ADD_BOOK, payload: { book } });
+    dispatch({ action: actions.ADD_BOOK, payload: book });
   };
 
   const handleRemoveFromFavorites = () => {
-    dispatch({ type: actions.REMOVE_BOOK, payload: { book } });
+    dispatch({ action: actions.REMOVE_BOOK, payload: book.id });
   };
 
   return (

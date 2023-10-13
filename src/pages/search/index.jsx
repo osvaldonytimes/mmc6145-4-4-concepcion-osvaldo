@@ -21,7 +21,7 @@ export default function Search() {
     if (res.status !== 200) return;
     const data = await res.json();
     dispatch({
-      type: actions.SEARCH_BOOKS,
+      action: actions.SEARCH_BOOKS,
       payload: data.items.map(({ id, volumeInfo }) => ({
         ...volumeInfo,
         id,
